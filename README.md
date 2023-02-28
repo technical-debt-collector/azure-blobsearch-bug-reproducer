@@ -14,8 +14,9 @@ The class Main will be run when starting the application as described below:
 ./mvnw compile quarkus:dev
 ```
 
-This method will call the two methods searchBlobs and searchBlobsBug,
-and their results will differ in sizes.
+This application calls the two methods searchBlobs and searchBlobsBug and print
+out their result sizes.
+
 The searchBlobs() only seems to work by explicitly providing a page size to the 
 byPage()-method which pages the results in the first place, even though a searchOptions 
 with the max page size was provided earlier in the code.
